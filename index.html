@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <aside type="button" onclick:"restartGame()">Restart</aside>
+    <div class="yellow" id="button"></div>
+    <div class="mid blue" id="button"></div>
+    <div class="bottom green" id="button"></div>
+    <div class="middle orange" id="button"></div>
+    <div class="middle mid silver"id="button"> </div>
+    <div class="bottom middle lightblue" id="button"></div>
+    <div class="right darkred"id="button"></div>
+    <div class="right mid purple"id="button"></div>
+    <div class="right bottom red"id="button"></div>
+  </body>
+  <script media="screen">
+  var mySection = document.querySelectorAll('div')
+  var reset = document.querySelector('aside')
+  var xmove = 0
+  var omove = 0
+  for (var b = 0; b < mySection.length; b++) {
+    mySection[b].addEventListener('click', function(){
+      if (this.innerText != "X" && this.innerText != "O") {
+        if (xmove <= omove){
+      this.innerText = "X"
+      xmove += 1
+    }
+    else{
+      this.innerText = "O"
+      omove += 1
+    }
+  }
+    }
+  )}
+  reset.addEventListener('click',function restartGame() {
+  for (var b = 0; b < 9; b++) {
+    mySection[b].innerText= ""
+    xmove = 0
+    omove = 0
+
+    }
+  })
+  </script>
+</html>

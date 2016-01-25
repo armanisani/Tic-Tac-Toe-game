@@ -1,0 +1,65 @@
+div {
+  height: 44px;
+  width: 44px;
+  position: absolute;
+  border: 3px solid black;
+  display: inline;
+  top: 40%;
+  left: 40%;
+  text-align: center;
+  font-size: 250%
+}
+.middle{
+  margin-left: 50px;
+}
+.bottom{
+  margin-top: 50px;
+}
+.right {
+  margin-left: 100px;
+}
+.mid {
+  margin-top: 100px;
+}
+.yellow {
+  background: yellow;
+}
+.green {
+  background: green;
+}
+.orange {
+  background: orange;
+}
+.red {
+  background: red;
+}
+.blue {
+  background: blue;
+}
+.purple {
+  background: purple;
+}
+.silver {
+  background: silver;
+}
+.darkred {
+  background: darkblue;
+}
+.lightblue {
+  background: lightblue;
+}
+aside {
+  float: right;
+  width: 50px;
+  height: 20px;
+  margin-top: 120px;
+  margin-right: 130px;
+  border: 2px solid black;
+  background: lightblue;
+  text-decoration: none;
+  color: darkblue;
+  text-align: center;
+}
+#button {
+  background:;
+}
